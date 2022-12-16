@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
+body{
+  background-color: rgb(233, 233, 223);
+ 
+  
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* body::before{
+  content: "";
+  background:url('https://tse1.mm.bing.net/th?id=OIP.xuMDAEqvwveo6KQ144qCpwHaE8&pid=Api&P=0') no-repeat center center/cover;
+  position: absolute;
+  height: 628px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.96;
+  top: 0px;
+  left: 0px;
+} */
+.itemscontainer{
+  width: 90%;
+  margin: auto;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-bottom: 3px solid black;
+  height: 320px;
+  overflow-x: auto;
+  border-radius: 6px;
+  flex-wrap: wrap;
+  box-shadow: 0 0 10px rgba(14, 13, 13, 0.959);
 }
-
-.App-link {
-  color: #61dafb;
+.itemscontainer::-webkit-scrollbar{
+width: 0;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.inn{
+  /* width: 800%; */
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 2%;
+}
+.card{
+  /* width: 20% !important; */
+  margin: 0px 10px;
+  border: 1px solid black !important;
+}
+.cbutton{
+  margin-left: 50%;
+}
+.logo{
+  font-size: 30px;
+  font-weight: bold;
 }
