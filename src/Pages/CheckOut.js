@@ -24,7 +24,6 @@ const CheckOut = () => {
   const handledelete = (id) => {
     dispatch(deleteitem(id));
   dispatch(setalert({open: true,message:"item removed from Thali",type:"error"}))
-
   };
   const handleChange = (e,eleId) => {
     const qty=e.target.value;
@@ -35,6 +34,7 @@ const CheckOut = () => {
 const orderClick=()=>{
   dispatch(setalert({open: true,message:"Order Placed",type:"success"}))
 
+
 }
 
   return (
@@ -44,7 +44,7 @@ const orderClick=()=>{
       <div className="thaliItems">
         <table
           className="table table-light"
-          style={{ width: "70%", margin: "auto", backgroundColor: "yellow", boxShadow:" 0 0 10px rgba(14, 13, 13, 0.959)" }}
+          style={{ width: "80%", margin: "auto", backgroundColor: "yellow", boxShadow:" 0 0 10px rgba(14, 13, 13, 0.959)" }}
         >
           <thead>
             <tr>
@@ -86,7 +86,7 @@ const orderClick=()=>{
                     </span>
                   </td>
                   <td>
-                    <span>total {ele.price}</span>
+                  <span>total {ele.price*parseInt(ele.quantity)}</span>
                   </td>
 
                   <td>

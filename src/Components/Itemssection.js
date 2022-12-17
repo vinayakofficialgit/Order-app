@@ -70,14 +70,15 @@ const Itemssection = () => {
           marginBottom: "30px",
           display: "flex",
           justifyContent: "space-around",
+          flexWrap:"wrap"
         }}
       >
-        <button className="btn btn-warning" onClick={setdefault}>
+        <button className="btn btn-warning my-2" onClick={setdefault}>
           All Dishes
         </button>
 
         <button
-          className="btn btn-warning"
+          className="btn btn-warning my-2"
           onClick={() => filtermenu("chapati")}
         >
           chapati
@@ -88,17 +89,17 @@ const Itemssection = () => {
         >
           Plicke
         </button>
-        <button className="btn btn-warning" onClick={() => filtermenu("curd")}>
+        <button className="btn btn-warning my-2" onClick={() => filtermenu("curd")}>
           Curd
         </button>
-        <button className="btn btn-warning" onClick={() => filtermenu("sweet")}>
+        <button className="btn btn-warning my-2" onClick={() => filtermenu("sweet")}>
           sweet
         </button>
-        <button className="btn btn-warning" onClick={() => filtermenu("daal")}>
+        <button className="btn btn-warning my-2" onClick={() => filtermenu("daal")}>
           daal
         </button>
         <button
-          className="btn btn-warning"
+          className="btn btn-warning my-2"
           onClick={() => filtermenu("paneer dish")}
         >
           Paneer dish

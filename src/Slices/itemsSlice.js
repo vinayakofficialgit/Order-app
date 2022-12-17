@@ -18,7 +18,8 @@ state.splice(action.payload,1);
       if(ele.id===action.payload.id){
         ele.quantity=action.payload.qty;
       }else{
-        ele.quantity=1;
+        // ele.quantity=1;
+        ele.quantity = ele.quantity ? ele.quantity : 1;
       }
      
      
