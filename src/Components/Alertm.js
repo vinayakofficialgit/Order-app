@@ -1,7 +1,4 @@
-// Snack Component - https://material-ui.com/components/snackbars/
-// import { Snackbar } from "@material-ui/core";
-// import MuiAlert from "@material-ui/lab/Alert";
-// import { CryptoState } from "../CryptoContext";
+
 import {Snackbar } from "@mui/material";
 import { useDispatch } from "react-redux";
 import {useSelector} from "react-redux";
