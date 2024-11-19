@@ -24,6 +24,8 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 #### `npm install -g serve`
 ##### `sudo npm install pm2 -g`
+###### `pm2 --name MyNodeapp start npm -- start`
+##### `pm2 status`
 ##### `serve -s build`
 
 Builds the app for production to the `build` folder.\
